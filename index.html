@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldle Helper</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZHJ1YmkwIiwiYSI6ImNsMXg3dDZsazAwNG8zam81cnU2YzZpY3YifQ.TRa_8eceQR4ApPfsHdpNAw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/drubi0/cl1x7u7w1002014ojkbtil5k2',
+            zoom: 3
+        });
+    </script>
+</body>
+<style>
+    body {
+        margin: 0;
+    }
+</style>
+</html>
